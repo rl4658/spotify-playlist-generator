@@ -1,0 +1,120 @@
+.main {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: -0.51rem;
+  background: url("./Picture2.png") no-repeat;
+  background-size: cover; /* Adjusts the background image to cover the entire container */
+  background-position: center center;
+  background-attachment: fixed;
+  color: #fff; /* Text color */
+}
+
+#welcome {
+  text-align: center;
+  font-weight: 900;
+}
+
+.container {
+  margin-top: 0rem;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+#prompt {
+  width: 45%; /* Adjust width as needed */
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 50px; /* Set border radius */
+  color: white; /* Set white text color */
+  margin: 0 auto; /* Center horizontally */
+  display: block;
+  font-size: 1.2rem;
+  background-image: url("./GPT.png"); /* Specify the path to your image */
+  background-position: right 10px center; /* Adjust position of the image */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  padding-right: 45px;
+  border: 2px solid #e3e3e3;
+}
+
+#prompt:focus {
+  outline: none;
+}
+
+#prompt:hover {
+  border-color: #b3b3b3;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+::placeholder {
+  color: #bfbfbf !important; /* Placeholder color */
+}
+
+#slider-container {
+  display: flex;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  width: fit-content; /* Adjusts width to fit its content */
+}
+
+.type {
+  margin-top: 7rem;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.slidecontainer:hover .type {
+  color: #34ad4c; /* Change the text color when sliders are being hovered */
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: center; /* Center items horizontally */
+}
+
+#generate {
+  background-color: white; /* Button background color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 6%;
+  font-weight: 400;
+  width: 300px;
+  height: min-content;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+#generate:hover {
+  background-color: #34ad4c; /* Button hover color */
+  color: white;
+}

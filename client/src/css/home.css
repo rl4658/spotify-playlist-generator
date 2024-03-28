@@ -1,0 +1,71 @@
+.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: -0.5rem;
+  background: url("./Picture1.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Fixed width */
+  height: 600px; /* Fixed height */
+  background-color: rgba(
+    42,
+    41,
+    41,
+    0.5
+  ); /* Adjust the color and opacity as needed */
+  backdrop-filter: blur(1rem); /* Add a blur effect */
+  border-radius: 10rem; /* Adjust the value as needed */
+}
+
+.title,
+.subtitle,
+.login-button {
+  position: relative; /* Ensure text elements are positioned relative to .home-page */
+  z-index: 1; /* Set higher stacking order for text elements */
+  color: white; /* Set text color */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  max-width: 37.5rem;
+}
+
+.login-button {
+  padding: 0.75rem 2rem;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 10rem; /* Adjust the value as needed */
+  border: 2px solid #e3e3e3;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1e1e1e;
+  color: white;
+}
