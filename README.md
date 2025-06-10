@@ -1,5 +1,9 @@
 # Spotify Playlist Generator
 
+<p align="center">
+  <img src="./home-page.jpeg" alt="Home Page" />
+</p>
+
 The **Spotify Playlist Generator** is a full-stack application that leverages AI and the Spotify API to create personalized playlists based on user prompts and audio feature sliders. With a React.js frontend and a FastAPI backend, users can fine-tune attributes like danceability, energy, and tempo, or start with a specific track seed.
 
 ---
